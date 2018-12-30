@@ -5,8 +5,10 @@ int main()
 {
     int c;
 
-    while ((c = getchar()) != '~') {
-        putchar(c);
+    while (c = getchar() != '~') {
+        //putchar(c);
+        printf("%d\n", c);
     }
+    printf("%d\n", c);    
     return 0;
 }
