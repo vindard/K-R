@@ -3,7 +3,7 @@
 #include <stdio.h>
 #define MAXLINE 1000    /* max line input size */
 
-int getline(char line[], int maxline);
+int get_line(char line[], int maxline);
 void copy(char to[], char from[]);
 
 /* Page 27, loc 1019*/
@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
     char longest[MAXLINE];    /* longest line saved here */
 
     max = 0;
-    while ((len = getline(line, MAXLINE)) > 0)
+    while ((len = get_line(line, MAXLINE)) > 0)
         if (len > max) {
             max = len;
             copy(longest, line);
@@ -27,8 +27,8 @@ int main(int argc, char const *argv[])
     return 0;
 }
 
-/* getline: read a line into s, return lemgth */
-int getline(char s[], int lim)
+/* get_line: read a line into s, return lemgth */
+int get_line(char s[], int lim)
 {
     int c, i;
 
