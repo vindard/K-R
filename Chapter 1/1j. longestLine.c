@@ -1,3 +1,5 @@
+/* Code currently doesn't compile! */
+
 #include <stdio.h>
 #define MAXLINE 1000    /* max line input size */
 
